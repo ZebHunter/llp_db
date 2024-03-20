@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Huawei/CLionProjects/llp_3/client_dir/client.c
+arpa/inet.h
+-
+stdio.h
+-
+stdlib.h
+-
+strings.h
+-
+sys/socket.h
+-
+serealizator.h
+/mnt/c/Users/Huawei/CLionProjects/llp_3/client_dir/serealizator.h
+../spec.pb-c.h
+/mnt/c/Users/Huawei/CLionProjects/llp_3/spec.pb-c.h
+
+/mnt/c/Users/Huawei/CLionProjects/llp_3/client_dir/serealizator.h
+structures/structures.h
+/mnt/c/Users/Huawei/CLionProjects/llp_3/client_dir/structures/structures.h
+../spec.pb-c.h
+/mnt/c/Users/Huawei/CLionProjects/llp_3/spec.pb-c.h
+
+/mnt/c/Users/Huawei/CLionProjects/llp_3/client_dir/structures/structures.h
+stdint.h
+-
+stdbool.h
+-
+
+/mnt/c/Users/Huawei/CLionProjects/llp_3/spec.pb-c.h
+protobuf-c/protobuf-c.h
+-
+

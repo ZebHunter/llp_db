@@ -1,0 +1,4 @@
+/mnt/c/Users/Huawei/CLionProjects/llp_3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Huawei/CLionProjects/llp_3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Huawei/CLionProjects/llp_3/cmake-build-debug/CMakeFiles/server_exec.dir
+/mnt/c/Users/Huawei/CLionProjects/llp_3/cmake-build-debug/CMakeFiles/client_exec.dir

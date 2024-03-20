@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/llp_3.dir/client_dir/client.c.o CMakeFiles/llp_3.dir/client_dir/structures/structures.c.o CMakeFiles/llp_3.dir/client_dir/serealizator.c.o CMakeFiles/llp_3.dir/server_dir/deserealizator.c.o CMakeFiles/llp_3.dir/server_dir/server.c.o  -o llp_3 

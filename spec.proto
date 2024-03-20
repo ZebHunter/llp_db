@@ -1,0 +1,71 @@
+syntax = "proto3";
+
+
+enum nodeType_t {
+    SELECT_QUERY_NODE = 0;
+    INSERT_QUERY_NODE = 1;
+    UPDATE_QUERY_NODE = 2;
+    DELETE_QUERY_NODE = 3;
+    NESTED_QUERY_NODE = 4;
+    QUERY_SET_NODE = 5;
+    OBJECT_NODE = 6;
+    VALUES_NODE = 7;
+    ELEMENT_SET_NODE = 8;
+    ELEMENT_NODE = 9;
+    KEY_NODE = 10;
+    INT_VAL_NODE = 11;
+    DOUBLE_VAL_NODE = 12;
+    BOOL_VAL_NODE = 13;
+    STR_VAL_NODE = 14;
+    FILTER_NODE = 15;
+    OP_EQ_NODE = 16;
+    OP_NEQ_NODE = 17;
+    OP_GT_NODE = 18;
+    OP_GTE_NODE = 19;
+    OP_LE_NODE = 20;
+    OP_LEE_NODE = 21;
+    OP_LIKE_NODE = 22;
+    OP_AND_NODE = 23;
+    OP_OR_NODE = 24;
+    OP_NOT_NODE = 25;
+}
+
+enum elementType {
+  INTEGER = 0;
+  FLOAT = 1;
+  BOOLEAN = 2;
+  STRING = 3;
+}
+
+message fields_t{
+  int32 integerValue = 1;
+  double doubleValue = 2;
+  bool booleanValue = 3;
+  string stringValue = 4;
+}
+
+message astNode_t{
+  astNode_t left = 1;
+  astNode_t right = 2;
+  nodeType_t type = 3;
+  fields_t field = 4;
+}
+
+message element {
+  string name = 1;
+  elementType type = 2;
+  fields_t field = 3;
+  element el = 4;
+}
+
+message page_t{
+  int32 timestamp = 1;
+  string name = 2;
+  element list = 3;
+  page_t page = 4;
+}
+
+message Response{
+  string result = 1;
+  page_t page_list = 2;
+}
